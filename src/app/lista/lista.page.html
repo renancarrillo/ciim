@@ -11,6 +11,20 @@
 
   <ion-list>
     <ion-item>
+      <ion-label>id</ion-label>
+      <ion-label>Nombre</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let har of hardware">
+      <ion-thumbnail>
+        <img src="{{ har.img }}">
+      </ion-thumbnail>
+      <ion-label>{{ har.id }}</ion-label>
+      <ion-label>{{ har.hardware }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- <ion-list>
+    <ion-item>
       <ion-label>Relay</ion-label>
     </ion-item>
     <ion-item>
@@ -19,7 +33,7 @@
     <ion-item>
       <ion-label>Boton</ion-label>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
   <!-- <ion-list>
     <ion-item>
