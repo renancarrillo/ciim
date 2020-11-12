@@ -8,13 +8,19 @@
 
 <ion-content [fullscreen]="true">
   
-  <ion-button (click)="mensaje()" shape="round">Picar aqui</ion-button>
+  <ion-button (click)="mensaje()" shape="round">Lista de dispositivos</ion-button>
 
-  <ion-header collapse="condense">
+  <ion-button [routerLink]="['/lista']" shape="round">Lista de dispositivos con ruta</ion-button>
+
+  <!-- <ion-button class="disenio">
+    El feo
+  </ion-button> -->
+
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title class="tam">Tab 1</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
