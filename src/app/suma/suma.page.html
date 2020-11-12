@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Suma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <button (click)="mas()" class="mas">
+      Mas
+    </button>
+  </ion-row>
+
+  <ion-row>
+    <ion-label class="numero">
+      {{ numero }}
+    </ion-label>
+  </ion-row>
+
+  <ion-row (click)="menos()" class="menos">
+    <button>
+      Menos
+    </button>
+  </ion-row>
+
+
+
+
+
+
+
+</ion-content>

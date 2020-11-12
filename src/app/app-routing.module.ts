@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'lista',
     loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'suma',
+    loadChildren: () => import('./suma/suma.module').then( m => m.SumaPageModule)
   }
 ];
 @NgModule({
